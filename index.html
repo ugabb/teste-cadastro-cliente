@@ -17,9 +17,9 @@
     <div class="d-flex flex-column justify-content-center align-items-center m-5">
         <header class="container d-flex justify-content-center align-items-center mb-3">
             <h1 class="h1">Cadastro Cliente / Produto</h1>
-            <button class="btn btn-secondary ms-5">Enviar</button>
+            <button type="submit" id="enviar" class="btn btn-secondary ms-5">Enviar</button>
         </header>
-        <form id="form" action="" class="d-flex justify-content-center row g-3 p-2 rounded">
+        <form id="form" action="" class="d-flex justify-content-center row g-3 p-2 rounded needs-validation" novalidate>
 
             <!-- A.solicitante  start -->
             <div id="a-solicitante" class="container">
@@ -52,7 +52,10 @@
                     <div class="container d-flex justify-content-between">
                         <div class="col-md-7">
                             <label for="" class="form-label">Razão Social</label>
-                            <input type="text" class="form-control form-control-sm" id="razao-social">
+                            <input type="text" class="form-control form-control-sm" id="razao-social" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
                         </div>
                         <div class="col-md-4">
                             <label for="" class="form-label">CNPJ</label>
@@ -136,15 +139,15 @@
 
                 <div class="container d-flex justify-content-between my-3">
                     <p class="">Produtos</p>
-                    <button class="btn btn-primary ">Incluir Item</button>
+                    <button type="button" class="btn btn-primary " onclick="addItem()">Incluir Item</button>
                 </div>
 
 
-                <div id="container-item" class="container d-flex ">
+                <div id="container-item" class="container d-flex">
                     <div id="trash" class="d-flex align-items-center col-md-1">
-                        <i class="fa-solid fa-trash-can fs-4"></i>
+                        <i class=" fa-solid fa-trash-can fs-4"></i>
                     </div>
-                    <div id="item" class="container mb-3 border p-3">
+                    <div id="item" class=" container mb-3 border p-3">
 
                         <div id="descricao" class="container d-flex justify-content-between align-items-center">
 
@@ -162,16 +165,17 @@
                                             <option value="1">Kilograma</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
-                                    </select>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-2">
                                     <label for="" class="form-label">Qtd. em Estoque</label>
-                                    <input  type="number" class="form-control form-control-sm" id="qtd-estoque">
+                                    <input type="number" class="form-control form-control-sm" id="qtd-estoque">
                                 </div>
                                 <div class="col-md-2">
                                     <label for="" class="form-label">Valor Unitário</label>
-                                    <input onblur="totalProduto()" type="number" class="form-control form-control-sm" id="valor-uni">
+                                    <input onblur="totalProduto()" type="number" class="form-control form-control-sm"
+                                        id="valor-uni">
                                 </div>
                                 <div class="col-md-2">
                                     <label for="" class="form-label">Valor Total</label>
@@ -195,8 +199,8 @@
 
                 <div id="documentos" class="border w-75 p-4">
                     <div id="doc" class="d-flex align-items-center">
-                        <i class="fa-solid fa-trash-can fs-5 me-3 p-1 text-danger border border-danger"></i>
-                        <i class="fa-solid fa-eye me-3 p-1 text-success border border-success "></i>
+                        <i class="fa-solid fa-trash-can fs-5 me-3 p-1 text-danger border border-danger pointer"></i>
+                        <i class="fa-solid fa-eye me-3 p-1 text-success border border-success pointer"></i>
                         <p class="text-center">Documento</p>
                     </div>
                 </div>
@@ -210,9 +214,9 @@
 
 
 
-            <div class="col-12 d-flex justify-content-center">
+            <!-- <div class="col-12 d-flex justify-content-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
+            </div> -->
 
         </form>
     </div>
@@ -220,6 +224,8 @@
 
     <script src="src/script.js"></script>
     <script src="src/cep.js"></script>
+    <script src="src/totalproduto.js"></script>
+    <script src="src/createJson.js"></script>
 </body>
 
 
