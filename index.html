@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/c646277984.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Project</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column justify-content-center align-items-center m-5">
+        <header class="container d-flex justify-content-center align-items-center mb-3">
+            <h1 class="h1">Cadastro Cliente / Produto</h1>
+            <button class="btn btn-secondary ms-5">Enviar</button>
+        </header>
+        <form id="form" action="" class="d-flex justify-content-center row g-3 p-2 rounded">
+
+            <!-- A.solicitante  start -->
+            <div id="a-solicitante" class="container">
+                <p>A.Solicitante</p>
+
+                <div class="container d-flex justify-content-around border p-2">
+                    <div class="col-md-3">
+                        <label for="" class="form-label">Data Solicitação</label>
+                        <input type="date" class="form-control form-control-sm" id="dt-solicitacao">
+                    </div>
+                    <div class="col-md-5">
+                        <label for="" class="form-label">Nome</label>
+                        <input type="text" class="form-control form-control-sm" id="nome">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="" class="form-label">Área</label>
+                        <input type="text" class="form-control form-control-sm" id="area">
+                    </div>
+                </div>
+            </div>
+            <!-- A.solicitante end -->
+
+            <!-- Solicitação start -->
+            <div id="solicitacao" class="border">
+                <p class="border-bottom p-1 bg-primary fw-bold">Solicitação</p>
+
+                <div id="dados-forn">
+                    <p>Dados do Fornecedor</p>
+
+                    <div class="container d-flex justify-content-between">
+                        <div class="col-md-7">
+                            <label for="" class="form-label">Razão Social</label>
+                            <input type="text" class="form-control form-control-sm" id="razao-social">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="" class="form-label">CNPJ</label>
+                            <input type="text" class="form-control form-control-sm" id="cnpj">
+                        </div>
+                    </div>
+
+                    <div class="container d-flex justify-content-between mt-2">
+                        <div class="col-md-7">
+                            <label for="" class="form-label">Nome Fantasia</label>
+                            <input type="text" class="form-control form-control-sm" id="nome-fantasia">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="" class="form-label">Inscrição Estadual</label>
+                            <input type="text" class="form-control form-control-sm" id="inscricao-estadual">
+                        </div>
+                    </div>
+
+                    <div class="container d-flex justify-content-between mt-2">
+                        <div class="col-md-3">
+                            <label for="" class="form-label">CEP</label>
+                            <input type="text" class="form-control form-control-sm" id="cep">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="form-label">Inscrição Municipal</label>
+                            <input type="text" class="form-control form-con" id="insc-muni">
+                        </div>
+                    </div>
+
+                    <div class="container d-flex justify-content-between mt-2">
+                        <div class="col-md-3">
+                            <label for="" class="form-label">Endereço</label>
+                            <input type="text" class="form-control form-control-sm" id="logradouro">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="form-label">Complemento</label>
+                            <input type="text" class="form-control form-control-sm" id="">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="form-label">Número</label>
+                            <input type="text" class="form-control form-control-sm" id="">
+                        </div>
+                    </div>
+
+                    <div class="container d-flex justify-content-between mt-2">
+                        <div class="col-md-3">
+                            <label for="" class="form-label">Bairro</label>
+                            <input type="text" class="form-control form-control-sm" id="bairro">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="form-label">Estado</label>
+                            <input type="text" class="form-control form-control-sm" id="uf">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="form-label">Município</label>
+                            <input type="text" class="form-control form-control-sm" id="localidade">
+                        </div>
+                    </div>
+
+                    <div class="container d-flex justify-content-between my-3">
+                        <div class="col-md-3">
+                            <label for="" class="form-label">Nome da pessoa de contato</label>
+                            <input type="text" class="form-control form-control-sm" id="nome-contato">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="form-label">Telefone</label>
+                            <input type="text" class="form-control form-control-sm" id="telefone">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" class="form-control form-control-sm" id="email">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Solicitação END -->
+
+            <!-- produtos START -->
+            <div id="produtos" class="border">
+
+                <div class="container d-flex justify-content-between my-3">
+                    <p class="">Produtos</p>
+                    <button class="btn btn-primary ">Incluir Item</button>
+                </div>
+
+
+                <div id="container-item" class="container d-flex ">
+                    <div id="trash" class="d-flex align-items-center col-md-1">
+                        <i class="fa-solid fa-trash-can fs-4"></i>
+                    </div>
+                    <div id="item" class="container mb-3 border p-3">
+
+                        <div id="descricao" class="container d-flex justify-content-between align-items-center">
+
+                            <label for="" class="form-label me-3 text-center text-nowrap">Descrição do Produto:</label>
+                            <input type="text" class="form-control form-control-sm" id="desc-produto">
+                        </div>
+
+                        <div id="desc-values">
+                            <div class="container d-flex justify-content-between align-items-center">
+                                <div class="col-md-2">
+                                    <label for="" class="form-label">Und. Medida</label>
+                                    <div class="">
+                                        <select class="form-select" id="und-medida">
+                                            <option selected></option>
+                                            <option value="1">Kilograma</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="" class="form-label">Qtd. em Estoque</label>
+                                    <input  type="number" class="form-control form-control-sm" id="qtd-estoque">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="" class="form-label">Valor Unitário</label>
+                                    <input onblur="totalProduto()" type="number" class="form-control form-control-sm" id="valor-uni">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="" class="form-label">Valor Total</label>
+                                    <input type="number" class="form-control form-control-sm" id="valor-total">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- produtos END -->
+
+            <!-- Anexos START -->
+            <div id="anexos" class="container d-flex justify-content-between mt-4">
+                <div id="anexar">
+                    <button class="btn btn-primary">Anexar</button>
+                </div>
+
+                <div id="documentos" class="border w-75 p-4">
+                    <div id="doc" class="d-flex align-items-center">
+                        <i class="fa-solid fa-trash-can fs-5 me-3 p-1 text-danger border border-danger"></i>
+                        <i class="fa-solid fa-eye me-3 p-1 text-success border border-success "></i>
+                        <p class="text-center">Documento</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Anexos END -->
+
+
+
+
+
+
+
+
+            <div class="col-12 d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+
+    <script src="src/script.js"></script>
+    <script src="src/cep.js"></script>
+</body>
+
+
+</html>
