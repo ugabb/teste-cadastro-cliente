@@ -43,11 +43,11 @@
             <!-- A.solicitante end -->
 
             <!-- Solicitação start -->
-            <div id="solicitacao" class="border">
-                <p class="border-bottom p-1 bg-primary fw-bold">Solicitação</p>
+            <div id="solicitacao" class="border p-0 rounded">
+                <p class="p-1 text-light bg-primary bg-opacity-75 fw-bold rounded">Solicitação</p>
 
                 <div id="dados-forn">
-                    <p>Dados do Fornecedor</p>
+                    <p class="px-5">Dados do Fornecedor</p>
 
                     <div class="container d-flex justify-content-between">
                         <div class="col-md-7">
@@ -139,7 +139,7 @@
 
                 <div class="container d-flex justify-content-between my-3">
                     <p class="">Produtos</p>
-                    <button type="button" class="btn btn-primary " onclick="addItem()">Incluir Item</button>
+                    <button type="button" class="btn btn-success " onclick="addItem()">Incluir Item</button>
                 </div>
 
 
@@ -178,8 +178,8 @@
                                         id="valor-uni">
                                 </div>
                                 <div class="col-md-2">
-                                    <label for="" class="form-label">Valor Total</label>
-                                    <input type="number" class="form-control form-control-sm" id="valor-total">
+                                    <label for="" class="form-label" >Valor Total</label>
+                                    <input type="number" class="form-control form-control-sm" id="valor-total" disabled>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +200,7 @@
                 <div id="documentos" class="border w-75 p-4">
                     <div id="doc" class="d-flex align-items-center">
                         <i class="fa-solid fa-trash-can fs-5 me-3 p-1 text-danger border border-danger pointer"></i>
-                        <i class="fa-solid fa-eye me-3 p-1 text-success border border-success pointer"></i>
+                        <i class="fa-solid fa-eye fs-5 me-3 p-1 text-success border border-success pointer"></i>
                         <p class="text-center">Documento</p>
                     </div>
                 </div>
