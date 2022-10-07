@@ -1,27 +1,7 @@
-var valorUnitario;
-var valorEst;
-var valorTotal;
-
-
-
-
-if (document.getElementById('container-item')) {
-    valorUnitario = document.getElementById("valor-uni").value;
-    valorEst = document.getElementById("qtd-estoque").value;
-    valorTotal = document.getElementById("valor-total");
-} else {
-    console.log("error");
-}
-
-
-
-
 const totalProduto = () => {
-
-    console.log("funcuouj");
-
-    let unidadeEst = valorEst;
-    let valorUni = valorUnitario;
+    let unidadeEst = document.getElementById("valor-uni").value;
+    let valorUni = document.getElementById("qtd-estoque").value;
+    let valorTotal = document.getElementById("valor-total");
     let total = unidadeEst * valorUni;
 
     if (valorUni != '' && unidadeEst != '') {
@@ -29,5 +9,4 @@ const totalProduto = () => {
     } else {
         valorTotal = '';
     }
-
 }
