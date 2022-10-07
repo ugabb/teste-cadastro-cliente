@@ -6,11 +6,6 @@
 // let valorTotal = Number($('#valor-total').val());
 
 
-const addItem = () => {
-    
-}
-
-
 const form = document.querySelector('#form');
 
 form.addEventListener('submit', (e) => {

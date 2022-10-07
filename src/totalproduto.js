@@ -4,6 +4,7 @@ const valorTotal = document.getElementById("valor-total");
 
 const totalProduto = () => {
 
+
     let unidadeEst = valorEst.value;
     let valorUni = valorUnitario.value;
     let total = unidadeEst * valorUni;
@@ -13,4 +14,5 @@ const totalProduto = () => {
     } else {
         valorTotal = '';
     }
+
 }
