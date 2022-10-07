@@ -43,7 +43,9 @@ const readFile = () => {
             div.innerHTML = `
                 <div id="doc" class="d-flex align-items-center">
                     <i class="fa-solid fa-trash-can fs-5 me-3 p-1 text-danger border        border-danger pointer"></i>
-                    <i class="fa-solid fa-eye fs-5 me-3 p-1 text-success border     border-success  pointer"></i>
+                    <a href="${reader.result}" target="_blank">
+                        <i class="fa-solid fa-eye fs-5 me-3 p-1 text-success border      border-success  pointer"></i>
+                    </a>
                     <p class="text-center label">${label.title}</p>
                 </div>
         ` ;
@@ -51,5 +53,9 @@ const readFile = () => {
         });
     })
 }
+
+const viewDocument = (dataUrl) => {
+
+}   
 
 
