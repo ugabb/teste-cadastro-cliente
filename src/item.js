@@ -34,15 +34,15 @@ incluir.addEventListener("click", (e) => {
                     </div>
                     <div class="col-md-2">
                         <label for="" class="form-label">Qtd. em Estoque</label>
-                        <input type="number" class="form-control form-control-sm" id="qtd-estoque">
+                        <input type="number" class="form-control form-control-sm  qtd-estoque" id="qtd-estoque">
                     </div>
                     <div class="col-md-2">
                         <label for="" class="form-label">Valor Unitário</label>
-                        <input onblur="totalProduto()" type="number" class="form-control form-control-sm" id="valor-uni">
+                        <input onblur="totalProduto()" type="number" class="form-control form-control-sm  valor-uni" id="valor-uni">
                     </div>
                     <div class="col-md-2">
                         <label for="" class="form-label">Valor Total</label>
-                        <input type="number" class="form-control form-control-sm" id="valor-total" disabled>
+                        <input type="number" class="form-control form-control-sm  valor-total" id="valor-total" disabled>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,6 @@ incluir.addEventListener("click", (e) => {
     </div>
 
 `;
-    
     divItem.appendChild(div);
     
 })
