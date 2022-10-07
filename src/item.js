@@ -14,9 +14,8 @@ incluir.addEventListener("click", (e) => {
         <div id="item" class=" container mb-3 border p-3">
 
             <div id="descricao" class="container d-flex justify-content-between align-items-center">
-                <label for="" class="form-label me-3 text-center text-nowrap">Descrição do
-                                    Produto:</label>
-                <input type="text" class="form-control form-control-sm" id="desc-produto">
+                <label for="" class="form-label me-3 text-center text-nowrap">Descrição do Produto:</label>
+                <input type="text" class="form-control form-control-sm" id="desc-produto" required>
             </div>
 
             <div id="desc-values">
@@ -24,21 +23,20 @@ incluir.addEventListener("click", (e) => {
                     <div class="col-md-2">
                         <label for="" class="form-label">Und. Medida</label>
                         <div class="">
-                            <select class="form-select" id="und-medida">
+                            <select class="form-select" id="und-medida" required>
                                 <option selected></option>
-                                <option value="1">Kilograma</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="Quilograma">Quilograma</option>
+                                <option value="Grama">Grama</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <label for="" class="form-label">Qtd. em Estoque</label>
-                        <input type="number" class="form-control form-control-sm  qtd-estoque" id="qtd-estoque">
+                        <input type="number" class="form-control form-control-sm  qtd-estoque" id="qtd-estoque" required>
                     </div>
                     <div class="col-md-2">
                         <label for="" class="form-label">Valor Unitário</label>
-                        <input onblur="totalProduto()" type="number" class="form-control form-control-sm  valor-uni" id="valor-uni">
+                        <input onblur="totalProduto()" type="number" class="form-control form-control-sm  valor-uni" id="valor-uni" required>
                     </div>
                     <div class="col-md-2">
                         <label for="" class="form-label">Valor Total</label>
