@@ -155,15 +155,13 @@
             <!-- Anexos START -->
             <div id="anexos" class="container d-flex justify-content-between mt-4">
                 <div id="anexar">
-                    <button class="btn btn-primary">Anexar</button>
+                    <input type="file" class="d-none myFile">
+                    <button type="button" class="btn btn-primary btnAnexar">Anexar</button>
+                    <span class="label">No file(s) selected</span>
                 </div>
 
-                <div id="documentos" class="border w-75 p-4">
-                    <div id="doc" class="d-flex align-items-center">
-                        <i class="fa-solid fa-trash-can fs-5 me-3 p-1 text-danger border border-danger pointer"></i>
-                        <i class="fa-solid fa-eye fs-5 me-3 p-1 text-success border border-success pointer"></i>
-                        <p class="text-center">Documento</p>
-                    </div>
+                <div id="documentos" class="border w-75 p-4 fileDiv">
+
                 </div>
             </div>
             <!-- Anexos END -->
@@ -187,6 +185,8 @@
 <script src="src/totalproduto.js"></script>
 <script src="src/createJson.js"></script>
 <script src="src/item.js"></script>
+<script src="src/anexar.js"></script>
+<script src="src/anexoP.js"></script>
 
 </body>
 
